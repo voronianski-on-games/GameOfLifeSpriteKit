@@ -10,4 +10,7 @@
 
 @interface DVMyScene : SKScene
 
+- (void)play;
+- (void)pause;
+
 @end

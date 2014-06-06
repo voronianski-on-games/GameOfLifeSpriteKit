@@ -17,13 +17,14 @@
 		2AA7E9C01940BF06006F70B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7E9BE1940BF06006F70B7 /* Main.storyboard */; };
 		2AA7E9C31940BF06006F70B7 /* DVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7E9C21940BF06006F70B7 /* DVViewController.m */; };
 		2AA7E9C61940BF06006F70B7 /* DVMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7E9C51940BF06006F70B7 /* DVMyScene.m */; };
-		2AA7E9C81940BF06006F70B7 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7E9C71940BF06006F70B7 /* Spaceship.png */; };
 		2AA7E9CA1940BF06006F70B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7E9C91940BF06006F70B7 /* Images.xcassets */; };
 		2AA7E9D11940BF06006F70B7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA7E9D01940BF06006F70B7 /* XCTest.framework */; };
 		2AA7E9D21940BF06006F70B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA7E9AA1940BF06006F70B7 /* Foundation.framework */; };
 		2AA7E9D31940BF06006F70B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA7E9AE1940BF06006F70B7 /* UIKit.framework */; };
 		2AA7E9DB1940BF06006F70B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA7E9D91940BF06006F70B7 /* InfoPlist.strings */; };
 		2AA7E9DD1940BF06006F70B7 /* GameOfLifeSpriteKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7E9DC1940BF06006F70B7 /* GameOfLifeSpriteKitTests.m */; };
+		2AF73AF01941B79A003E891D /* DVGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF73AEF1941B79A003E891D /* DVGrid.m */; };
+		2AF73AF31941B87A003E891D /* DVCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF73AF21941B87A003E891D /* DVCreature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +54,16 @@
 		2AA7E9C21940BF06006F70B7 /* DVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVViewController.m; sourceTree = "<group>"; };
 		2AA7E9C41940BF06006F70B7 /* DVMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMyScene.h; sourceTree = "<group>"; };
 		2AA7E9C51940BF06006F70B7 /* DVMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMyScene.m; sourceTree = "<group>"; };
-		2AA7E9C71940BF06006F70B7 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		2AA7E9C91940BF06006F70B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AA7E9CF1940BF06006F70B7 /* GameOfLifeSpriteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeSpriteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA7E9D01940BF06006F70B7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2AA7E9D81940BF06006F70B7 /* GameOfLifeSpriteKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameOfLifeSpriteKitTests-Info.plist"; sourceTree = "<group>"; };
 		2AA7E9DA1940BF06006F70B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AA7E9DC1940BF06006F70B7 /* GameOfLifeSpriteKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeSpriteKitTests.m; sourceTree = "<group>"; };
+		2AF73AEE1941B79A003E891D /* DVGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVGrid.h; sourceTree = "<group>"; };
+		2AF73AEF1941B79A003E891D /* DVGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGrid.m; sourceTree = "<group>"; };
+		2AF73AF11941B87A003E891D /* DVCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCreature.h; sourceTree = "<group>"; };
+		2AF73AF21941B87A003E891D /* DVCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCreature.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,10 @@
 				2AA7E9C21940BF06006F70B7 /* DVViewController.m */,
 				2AA7E9C41940BF06006F70B7 /* DVMyScene.h */,
 				2AA7E9C51940BF06006F70B7 /* DVMyScene.m */,
-				2AA7E9C71940BF06006F70B7 /* Spaceship.png */,
+				2AF73AEE1941B79A003E891D /* DVGrid.h */,
+				2AF73AEF1941B79A003E891D /* DVGrid.m */,
+				2AF73AF11941B87A003E891D /* DVCreature.h */,
+				2AF73AF21941B87A003E891D /* DVCreature.m */,
 				2AA7E9C91940BF06006F70B7 /* Images.xcassets */,
 				2AA7E9B31940BF06006F70B7 /* Supporting Files */,
 			);
@@ -243,7 +250,6 @@
 			files = (
 				2AA7E9B71940BF06006F70B7 /* InfoPlist.strings in Resources */,
 				2AA7E9CA1940BF06006F70B7 /* Images.xcassets in Resources */,
-				2AA7E9C81940BF06006F70B7 /* Spaceship.png in Resources */,
 				2AA7E9C01940BF06006F70B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF73AF31941B87A003E891D /* DVCreature.m in Sources */,
 				2AA7E9C61940BF06006F70B7 /* DVMyScene.m in Sources */,
+				2AF73AF01941B79A003E891D /* DVGrid.m in Sources */,
 				2AA7E9BD1940BF06006F70B7 /* DVAppDelegate.m in Sources */,
 				2AA7E9C31940BF06006F70B7 /* DVViewController.m in Sources */,
 				2AA7E9B91940BF06006F70B7 /* main.m in Sources */,
@@ -473,6 +481,7 @@
 				2AA7E9E21940BF06006F70B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AA7E9E31940BF06006F70B7 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteKitTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +490,7 @@
 				2AA7E9E51940BF06006F70B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

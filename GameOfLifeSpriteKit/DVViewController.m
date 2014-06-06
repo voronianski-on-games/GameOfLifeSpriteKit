@@ -14,22 +14,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
 
     // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    SKView *skView = (SKView *)self.view;
+    //skView.showsFPS = YES;
+    //skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [DVMyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    SKScene *scene = [DVMyScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [skView presentScene:scene];
+    
+    // Control buttons
+    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 70, 38)];
+    [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    [playButton setImage:[UIImage imageNamed:@"play-pressed"] forState:UIControlStateHighlighted];
+    [playButton addTarget:scene action:@selector(play) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:playButton];
+    
+    UIButton *pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 58.0f, 70, 38)];
+    [pauseButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    [pauseButton setImage:[UIImage imageNamed:@"pause-pressed"] forState:UIControlStateHighlighted];
+    [pauseButton addTarget:scene action:@selector(pause) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:pauseButton];
 }
 
 - (BOOL)shouldAutorotate
 {
+    return YES;
+}
+
+- (BOOL)prefersStatusBarHidden {
     return YES;
 }
 
