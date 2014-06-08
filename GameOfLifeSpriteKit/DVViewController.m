@@ -30,13 +30,13 @@
     [skView presentScene:scene];
     
     // Control buttons
-    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 70, 38)];
+    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 70.0f, 38.0f)];
     [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
     [playButton setImage:[UIImage imageNamed:@"play-pressed"] forState:UIControlStateHighlighted];
     [playButton addTarget:scene action:@selector(play) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:playButton];
     
-    UIButton *pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 58.0f, 70, 38)];
+    UIButton *pauseButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 58.0f, 70.0f, 38.0f)];
     [pauseButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
     [pauseButton setImage:[UIImage imageNamed:@"pause-pressed"] forState:UIControlStateHighlighted];
     [pauseButton addTarget:scene action:@selector(pause) forControlEvents:UIControlEventTouchDown];

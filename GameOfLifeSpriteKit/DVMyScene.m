@@ -27,7 +27,7 @@
         
         _grid = [[DVGrid alloc] initGrid];
         [_grid setAnchorPoint:CGPointMake(0.0f, 0.0f)];
-        [_grid setPosition:CGPointMake(size.height-_grid.size.width-10.0f, 6.0f)];
+        [_grid setPosition:CGPointMake(size.height-_grid.size.width-6.0f, 6.0f)];
         [self addChild:_grid];
         
         SKSpriteNode *microscope = [SKSpriteNode spriteNodeWithImageNamed:@"microscope"];
