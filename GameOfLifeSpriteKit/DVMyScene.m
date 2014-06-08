@@ -44,33 +44,33 @@
         NSString *fontName = @"Helvetica Neue Bold";
         CGFloat fontSize = 12.0f;
         
-        SKLabelNode *generationLabelText = [SKLabelNode labelNodeWithFontNamed:fontName];
-        [generationLabelText setText:@"Population"];
-        [generationLabelText setFontSize:fontSize];
-        [generationLabelText setFontColor:labelColor];
-        [generationLabelText setPosition:CGPointMake(2.0f, 65.0f)];
-        [balloon addChild:generationLabelText];
-        
-        _generationLabel = [SKLabelNode labelNodeWithFontNamed:fontName];
-        [_generationLabel setText:@"0"];
-        [_generationLabel setFontSize:fontSize];
-        [_generationLabel setFontColor:labelColor];
-        [_generationLabel setPosition:CGPointMake(2.0f, 50.0f)];
-        [balloon addChild:_generationLabel];
-        
         SKLabelNode *populationLabelText = [SKLabelNode labelNodeWithFontNamed:fontName];
-        [populationLabelText setText:@"Generation"];
+        [populationLabelText setText:@"Population"];
         [populationLabelText setFontSize:fontSize];
         [populationLabelText setFontColor:labelColor];
-        [populationLabelText setPosition:CGPointMake(2.0f, 33.0f)];
+        [populationLabelText setPosition:CGPointMake(2.0f, 65.0f)];
         [balloon addChild:populationLabelText];
         
         _populationLabel = [SKLabelNode labelNodeWithFontNamed:fontName];
         [_populationLabel setText:@"0"];
         [_populationLabel setFontSize:fontSize];
         [_populationLabel setFontColor:labelColor];
-        [_populationLabel setPosition:CGPointMake(2.0f, 18.0f)];
+        [_populationLabel setPosition:CGPointMake(2.0f, 50.0f)];
         [balloon addChild:_populationLabel];
+        
+        SKLabelNode *generationLabelText = [SKLabelNode labelNodeWithFontNamed:fontName];
+        [generationLabelText setText:@"Generation"];
+        [generationLabelText setFontSize:fontSize];
+        [generationLabelText setFontColor:labelColor];
+        [generationLabelText setPosition:CGPointMake(2.0f, 33.0f)];
+        [balloon addChild:generationLabelText];
+        
+        _generationLabel = [SKLabelNode labelNodeWithFontNamed:fontName];
+        [_generationLabel setText:@"0"];
+        [_generationLabel setFontSize:fontSize];
+        [_generationLabel setFontColor:labelColor];
+        [_generationLabel setPosition:CGPointMake(2.0f, 18.0f)];
+        [balloon addChild:_generationLabel];
     }
     
     return self;
